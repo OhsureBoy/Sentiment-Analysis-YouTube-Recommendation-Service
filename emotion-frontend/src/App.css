@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* 변경: 너비를 80%로 설정 */
+  max-width: 1000px; /* 변경: 최대 너비를 1000px로 설정 */
+  margin: 0 auto;
+  padding: 20px; /* 변경: 패딩을 20px로 설정 */
+  background-color: #f9f9f9;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* 변경: 아래 정렬 */
+  align-items: center; /* 변경: 가운데 정렬 */
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.messages {
+  width: 100%;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #f8d7da;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.input-form {
+  width: 100%; /* 변경: 입력 폼을 꽉 차게 설정 */
+  margin-top: 10px; /* 변경: 입력 폼 위 간격 추가 */
+}
+
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* 하단에 고정 */
+  bottom: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+textarea,
+input,
+select {
+  width: 70%; /* 입력 칸의 크기를 채팅 버블 크기에 맞춤 */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 70%; /* 버튼 크기를 채팅 버블 크기에 맞춤 */
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%; /* 이미지가 부모 요소의 너비에 맞춰짐 */
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+

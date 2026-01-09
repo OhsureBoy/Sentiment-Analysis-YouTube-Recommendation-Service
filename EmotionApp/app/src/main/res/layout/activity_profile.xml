@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름을 입력하세요"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@drawable/spinner_background"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:hint="나이를 입력하세요"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@drawable/spinner_background"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@android:color/white"
+        android:entries="@array/gender_options" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerGender"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:text="제출하기"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background" />
+
+</RelativeLayout>

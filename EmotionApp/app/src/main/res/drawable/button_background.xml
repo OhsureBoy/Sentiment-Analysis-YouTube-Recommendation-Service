@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#1976D2" /> <!-- 눌린 상태의 색상 -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#2196F3" /> <!-- 기본 상태의 색상 -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EmotionApp</string>
+
+        <string-array name="gender_options">
+            <item>남성</item>
+            <item>여성</item>
+        </string-array>
+</resources>
