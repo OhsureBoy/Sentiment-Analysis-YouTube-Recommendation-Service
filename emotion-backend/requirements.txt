@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+Flask
+joblib
+openai==0.28
+google-api-python-client
+flask_cors
